@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rag-knowledge-assistant
+    runtime: docker
+    repo: https://github.com/adityashirsatrao007/rag-knowledge-assistant
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: STORE_PATH
+        value: /app/chroma_db
