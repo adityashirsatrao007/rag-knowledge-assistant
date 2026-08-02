@@ -1,0 +1,15 @@
+# Business Overview
+
+RagWorks is a document intelligence platform for small businesses. It ingests
+policies, terms, and marketing material and answers questions with citations.
+
+## Revenue share model
+
+The revenue share model is 70% to the host and 30% to the platform for
+marketplace transactions. Enterprise plans use a flat monthly fee instead of a
+revenue share.
+
+## Available cities
+
+The service is available in Pune, Bengaluru, Mumbai, Hyderabad, and Chennai.
+Expansion to Delhi is planned next quarter.

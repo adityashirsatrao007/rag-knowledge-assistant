@@ -1,0 +1,5 @@
+[
+  {"question": "What is the revenue share model?", "expected_source": "business.txt"},
+  {"question": "What is the cancellation policy?", "expected_source": "terms.txt"},
+  {"question": "Which cities is the service available in?", "expected_source": "business.txt"}
+]
