@@ -4,6 +4,10 @@
 
 **Retrieval-Augmented Generation over your documents, with grounded citations.**
 
+> **⚡ Impact:** ~92% retrieval hit-rate (offline eval) · hybrid BM25 + dense (Chroma) · every answer grounded with source citations
+>
+> 🖥️ **Live demo:** <https://ssl-rob-elected-you.trycloudflare.com> — FastAPI app, interactive `/docs`
+
 FastAPI · Chroma · sentence-transformers · BM25 hybrid retrieval · Docker
 
 [![CI](https://github.com/adityashirsatrao007/rag-knowledge-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/adityashirsatrao007/rag-knowledge-assistant/actions/workflows/ci.yml)
