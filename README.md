@@ -21,6 +21,10 @@ A production-shaped RAG service that chunks and embeds documents into a **Chroma
 
 Works offline out of the box: it prefers `sentence-transformers` embeddings when installed, and falls back to a zero-download hashing embedder so the full pipeline runs with no model downloads or API keys. Plug in any OpenAI-compatible endpoint (`OPENAI_API_KEY` / `LLM_BASE_URL`) for LLM-backed answers.
 
+![Curved library walls of books around a staircase, standing in for retrieval across a document corpus](figures/retrieval-corpus.jpg)
+
+*Image: StockSnap.io, released under CC0.*
+
 ## Features
 
 - **Hybrid retrieval** — vector similarity + BM25 lexical scoring, reranked before generation
