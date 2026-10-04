@@ -4,7 +4,7 @@
 
 **Retrieval-Augmented Generation over your documents, with grounded citations.**
 
-> **⚡ Impact:** ~92% retrieval hit-rate (offline eval) · hybrid BM25 + dense (Chroma) · every answer grounded with source citations
+> **⚡ Impact:** runs offline with no model downloads or API keys · hybrid BM25 + dense (Chroma) · every answer grounded with source citations
 >
 > 🖥️ **Live demo:** <https://ssl-rob-elected-you.trycloudflare.com> — FastAPI app, interactive `/docs`
 
@@ -30,7 +30,7 @@ Works offline out of the box: it prefers `sentence-transformers` embeddings when
 - **Hybrid retrieval** — vector similarity + BM25 lexical scoring, reranked before generation
 - **Grounded answers** — every response carries source citations and metadata filters
 - **Pluggable LLM layer** — OpenAI, any OpenAI-compatible API, or a free local extractive answerer
-- **RAG evaluation harness** — `scripts/evaluate.py` measures retrieval hit-rate and answer quality against a 50-question eval set
+- **RAG evaluation harness** — `scripts/evaluate.py` scores retrieval hit-rate against `data/eval_questions.json`, the committed starter set
 - **Production shape** — FastAPI, async, streaming responses, Docker + docker-compose
 
 ## Architecture
@@ -73,7 +73,7 @@ Set `OPENAI_API_KEY` (or `LLM_BASE_URL` for any OpenAI-compatible endpoint) to u
 
 ## Evaluation
 
-`scripts/evaluate.py` reports retrieval hit-rate and answer quality against `data/eval_questions.json`. Measured results are published in the repo so retrieval quality is verifiable, not just claimed.
+`scripts/evaluate.py` reports retrieval hit-rate against `data/eval_questions.json`. The committed starter set is 3 questions over the 2 documents in `data/sample_docs/`; add to both files to measure a larger corpus.
 
 ## Project layout
 
